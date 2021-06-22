@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import Carousel from './CarouselComponent';
+import HomeCarousel from './CarouselComponent';
 import Services from './ServicesComponent';
 import About from './AboutComponent';
 import Contact from './ContactComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { SERVICES } from '../shared/services';
 import ServiceInfo from './ServiceInfoComponent';
+import Gallery from './GalleryComponent';
 
 class Main extends Component {
     constructor(props) {
@@ -20,10 +21,9 @@ class Main extends Component {
     render() {
         const HomePage = () => {    // have to used arrow function here for using this and get state
             return (
-                <div className="container">
-                    <Carousel />
-                    
-
+                <div className="container mt-3">
+                    <HomeCarousel />
+                    <Services services={this.state.services} />
                 </div>
             );
         }
@@ -42,6 +42,7 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/services' render={() => <Services services={this.state.services} />} />
+                    <Route exact path='/gallery' render={() => <Gallery component={Gallery} />} />
                     <Route path='/services/:serviceId' component={ServiceWithId} />
                     <Route exact path='/aboutus' render={() => <About component={About} />} />
                     <Route exact path='/contactus' render={() => <Contact component={Contact} />} />

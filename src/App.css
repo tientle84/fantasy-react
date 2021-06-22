@@ -42,7 +42,7 @@ header h2 {
 }
 
 .nav-item {
-  padding: 3px;
+  padding: 5px;
 }
 
 .nav-item.active, .nav-item:hover {
@@ -52,6 +52,7 @@ header h2 {
 }
 
 .nav-item > .nav-link.active {
+  border-radius: 5px;
   background-color:rgb(255, 0, 212);  
   color: white;
 }
@@ -111,14 +112,13 @@ img.zoom {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-}      
+  -ms-transition: all .3s ease-in-out;  
+  box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+}     
 
-.transition {
-  -webkit-transform: scale(1.2); 
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
+img.zoom:hover {
+  transform: scale(1.1);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
 }
 
 .row-gallery {

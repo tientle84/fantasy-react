@@ -27,7 +27,7 @@ class Header extends Component {
                         <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.png" height="80" alt="Fantasy Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav navbar className="ml-auto">
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">
                                         <i className="fa fa-home fa-lg" /> Home

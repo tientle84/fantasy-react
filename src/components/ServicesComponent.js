@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function RenderServiceItem({service}) {
@@ -27,11 +27,7 @@ function Services(props) {
     return (
         <div className="container">
             <div className="row">
-                <div className="col">
-                    <Breadcrumb>
-                        <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>Services</BreadcrumbItem>
-                    </Breadcrumb>
+                <div className="col mt-3">
                     <h2>Our Services</h2>
                     <hr />
                 </div>
