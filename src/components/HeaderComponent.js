@@ -53,13 +53,12 @@ class Header extends Component {
                                         <i className="fa fa-address-card fa-lg" /> Contact Us
                                     </NavLink>
                                 </NavItem>
-                            </Nav>
-
-                            <span className="navbar-text ml-auto">
-                                <a role="button" data-toggle="modal" data-target="#bookingModal">
-                                    <i className="fa fa-calendar"></i> Booking
-                                </a>
-                            </span>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/booking">
+                                        <i className="fa fa-calendar" /> Booking
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>                            
                         </Collapse>                        
                     </div>
                 </Navbar>

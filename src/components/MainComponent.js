@@ -5,6 +5,7 @@ import HomeCarousel from './CarouselComponent';
 import Services from './ServicesComponent';
 import About from './AboutComponent';
 import Contact from './ContactComponent';
+import Booking from './BookingComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { SERVICES } from '../shared/services';
 import ServiceInfo from './ServiceInfoComponent';
@@ -46,6 +47,7 @@ class Main extends Component {
                     <Route path='/services/:serviceId' component={ServiceWithId} />
                     <Route exact path='/aboutus' render={() => <About component={About} />} />
                     <Route exact path='/contactus' render={() => <Contact component={Contact} />} />
+                    <Route exact path='/booking' render={() => <Booking component={Booking} />} />
                     <Redirect to='/home' />
                 </Switch>
                 <Footer />
