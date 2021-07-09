@@ -78,7 +78,10 @@ class Booking extends Component {
             let items = snapshot.val();
             let newState = [];
             for (let item in items) {
-                if (items[item].customer === this.state.user.email) {
+                if (
+                    this.state.user != null &&
+                    items[item].customer === this.state.user.email
+                ) {
                     newState.push({
                         id: item,
                         service: items[item].service,
