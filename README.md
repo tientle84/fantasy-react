@@ -14,7 +14,7 @@ This is a responsive React website for Fantasy Nails Spa.
 
 ## Screenshots
 
-![home](/screenshots/home.png)
+![home](/src/screenshots/home.png)
 
 ## License
 
